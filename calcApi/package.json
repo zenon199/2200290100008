@@ -1,0 +1,15 @@
+{
+  "name": "calcapis",
+  "version": "1.0.0",
+  "description": "Calculator api for some no.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abhishek",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
