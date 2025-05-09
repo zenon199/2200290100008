@@ -1,10 +1,11 @@
 {
   "name": "calcapis",
   "version": "1.0.0",
-  "description": "Calculator api for some no.",
+  "description": "Avg calculation api for some no.",
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Abhishek",
