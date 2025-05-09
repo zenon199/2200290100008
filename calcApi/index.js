@@ -18,7 +18,23 @@ const app = express();
 app.use(express.json());
 
 app.get('/numbers/:numberid', async (req, res) => {
-    res.send('Calculator Api');
+    const { numberid } = req.params;
+
+    if (!ids.includes(numberid)) {
+        return res.status(404).json({
+            message: 'Invalid number id'
+        })
+    }
+    const windowPrevState = [...numWindow];
+    try {
+        const response = await axios.get(endpoints[numberid], {
+            timeout: reqTimeout
+        });
+
+          const numbers = response.data.numbers || [];
+    } catch (error) {
+        
+    }
 })
 
 app.listen(port, () => {
